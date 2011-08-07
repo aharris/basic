@@ -7,6 +7,18 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <header>
+    <nav>
+		  <ul>
+		    <li>
+		      <%= link_to_unless_current "About", about_path, :class => "mycals12321" %>
+		    </li>
+		    <li>
+		      <%= link_to_unless_current "Contact", contact_path %>
+		    </li>
+		  </ul>
+		</nav>
+	</header>
 
 <%= yield %>
 
